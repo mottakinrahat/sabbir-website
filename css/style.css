@@ -1,4 +1,42 @@
 * {
-    font-family: 'Alkatra', cursive;
     font-family: 'Inter', sans-serif;
 }
+body{
+    background-color:#1E1E1E ;
+    font-family: 'Inter', sans-serif;
+}
+#data-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:40px;
+   
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .tab-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size:14px;
+
+  }
+  
+  .tab-button.active {
+    color: #F8A219;
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 20px;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
