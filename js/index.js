@@ -80,3 +80,8 @@ function changeTab(event, tabId) {
     selectedTab.classList.add("active");
     event.currentTarget.classList.add("active");
 }
+
+// By default, display the recent tab content
+const defaultTabId = "tab1";
+const defaultTabButton = document.getElementById("tab1");
+changeTab({ currentTarget: defaultTabButton }, defaultTabId);
