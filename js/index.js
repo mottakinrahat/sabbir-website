@@ -51,9 +51,9 @@ const displayGameData = (games) => {
         gameDiv.innerHTML = `
             <div class=" w-[393px] text-white">
             <img src="${game.image}" alt="">
-            <p class="mt-[25px] text-[12px]">${game.headers}</p>
+            <p class="mt-[25px] text-[12px] inter">${game.headers}</p>
             <h3 class="text-[20px] font-bold mb-[6px] mt-[6px]">${game.title}</h3>
-            <p class="text-[14px] text-gray-400">${game.paragraph}</p>
+            <p class="text-[14px] text-gray-400 inter">${game.paragraph}</p>
             </div>
         `;
         gamesContainer.appendChild(gameDiv);

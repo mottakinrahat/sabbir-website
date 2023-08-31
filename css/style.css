@@ -1,43 +1,72 @@
-* {
-    font-family: 'Inter', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Apply the Lalezar font to specific elements */
+.lalezar {
+  font-family: 'Lalezar', cursive;
 }
-body{
-    background-color:#1E1E1E ;
-    font-family: 'Inter', sans-serif;
+
+.oswald {
+  font-family: 'Oswald', sans-serif;
 }
-#data-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:40px;
-   
+
+.inter {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #1E1E1E;
+
+}
+
+#data-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+
 }
 
 
 .tabs {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .tab-button {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    font-size:14px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
-  }
-  
-  .tab-button.active {
-    color: #F8A219;
-  }
-  
-  .tab-content {
-    display: none;
-    padding: 20px;
-  }
-  
-  .tab-content.active {
-    display: block;
-  }
+.tab-button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
 
+}
+
+.tab-button.active {
+  color: #F8A219;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.banner-image {
+  width: 100%;
+  /* Default width for all screen sizes */
+
+  /* Media query for laptops and larger screens */
+  @media (min-width: 768px) {
+    width: auto;
+    /* Reset width to auto */
+    height: 100%;
+    /* Make the image take full height */
+    object-fit: cover;
+    /* Crop and fill the container */
+  }
+}
