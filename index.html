@@ -15,10 +15,9 @@
 <body>
 
     <header class="">
-        <div class="fixed top-0 z-50 w-full lalezar">
+        <div class="fixed top-0 z-50 w-full lalezar uppercase">
             <div class=" bg-[#1C1F26] w-full h-[125px] relative grid grid-col-2 fixed top-0 z-50">
-                <div
-                    class="text-white flex justify-between px-[335px] items-center  border-b border-emerald-900  w-full">
+                <div class="text-white flex justify-between px-[335px] mb-2 items-center  border-b border-[#2A2C35]  w-full">
                     <div class="flex gap-2">
                         <div>
                             <h2 class="">Follow us</h2>
@@ -30,9 +29,9 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-2">
-                        <button class="px-[4px] py-[5px] text-black rounded font-bold bg-[#F8A219]">Register</button>
+                        <button class="px-[6px] py-[4px] text-black rounded font-bold bg-[#F8A219]">Register</button>
                         <div class="divider">OR</div>
-                        <button class="px-[4px] py-[5px] text-black rounded font-bold bg-[#F8A219]">Login</button>
+                        <button class="px-[15px] py-[4px] text-black rounded font-bold bg-[#F8A219]">Login</button>
 
                     </div>
 
@@ -47,15 +46,34 @@
                         </ul>
                     </div>
 
-                    <div class="ml-20">
+                    <div class="relative">
                         <ul class="flex justify-between items-center xl:gap-[40px]">
                             <li>Heros</li>
                             <li>Artifacts</li>
                             <li>Artifacts</li>
-                            <li>Tools</li>
-                        </ul>
+                            <li class="relative text-white dropdown dropdown-end">
+                                <button tabindex="0" class="m-1 flex items-center gap-1">TOOLS <svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </button>
+                                <ul class="dropdown-content  z-[1] menu p-2  bg-[#1C1F26] rounded-box w-52">
+                                    <li><a  class="hover:text-[#F8A219]">Hero Build tool</a></li>
+                                    <li><a  class="hover:text-[#F8A219]">Pity Tracker</a></li>
+                                </ul>
+                            </li>
 
+                            <li><svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                                </svg>
+                            </li>
+                        </ul>
                     </div>
+
 
 
                 </div>
@@ -78,9 +96,9 @@
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content  text-neutral-content">
                     <div class="w-[593px] mr-[600px]">
-                        <h2 class="text-3xl uppercase inter">Explore</h2>
-                        <h1 class="mb-5 text-5xl font-bold lalezar">
-                            <span class="text-[#F8A219]  mb-4 mt-4">WATCHER OF THE <br /> REALM'S</span> UNIVERSE
+                        <h2 class="text-[40px] uppercase inter">Explore</h2>
+                        <h1 class=" leading-[50px] mt-4 mb-4 lalezar">
+                            <span class="text-[#F8A219] text-[72px]">WATCHER OF THE <br /> REALM'S</span> <span class="text-[72px]">UNIVERSE</span>
                         </h1>
                         <p class="mb-5 w-[583px] uppercase oswald">Discover the ultimate Watcher of the Realm resource
                             center
@@ -395,18 +413,19 @@
                 Important Links
                 <span class="absolute left-0 w-[190px] h-[2px] bg-white bottom-[-8px]"></span>
             </span>
-           <div class="flex flex-col gap-2 inter">
-            <a class="link link-hover">Terms and Conditions</a>
-            <a class="link link-hover">Disclaimer</a>
-            <a class="link link-hover">Privacy Policy</a>
-           </div>
+            <div class="flex flex-col gap-2 inter">
+                <a class="link link-hover">Terms and Conditions</a>
+                <a class="link link-hover">Disclaimer</a>
+                <a class="link link-hover">Privacy Policy</a>
+            </div>
         </div>
         <div>
             <span class="footer text-[24px] mb-2 relative inline-block">
                 Stay In Touch
                 <span class="absolute left-0 w-[190px] h-[2px] bg-white bottom-[-8px]"></span>
             </span>
-            <p class="text-[14px] inter">To be updated with all the latest news,<br /> Article and special annoucements.</p>
+            <p class="text-[14px] inter">To be updated with all the latest news,<br /> Article and special annoucements.
+            </p>
             <div class="form-control w-80">
                 <label class="label">
                     <span class="label-text">Enter your email address</span>
